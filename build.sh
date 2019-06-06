@@ -7,4 +7,5 @@ git am ./meta-linkit7688/recipes-kernel/swconfig/micro-iot-poky-patch-for-swconf
 
 . oe-init-build-env build
 bitbake micro-iot-basic-image
-bitbake -c prepare_sysupgrade micro-iot-basic-image
+bitbake -c prepare_sysupgrade_ubi_ubifs micro-iot-basic-image
+bitbake -c prepare_sysupgrade_ubi_squashfs micro-iot-basic-image
